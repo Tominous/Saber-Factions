@@ -97,7 +97,7 @@ public class Conf {
     public static int autoLeaveRoutineMaxMillisecondsPerTick = 5;  // 1 server tick is roughly 50ms, so default max 10% of a tick
     public static boolean removePlayerDataWhenBanned = true;
     public static boolean autoLeaveDeleteFPlayerData = true; // Let them just remove player from Faction.
-    public static boolean worldGuardChecking = false;
+    public static boolean worldGuardChecking = true;
     public static boolean worldGuardBuildPriority = false;
     public static boolean factionsDrainEnabled = false;
     //RESERVE
@@ -287,7 +287,7 @@ public class Conf {
     public static double econCostShow = 0.0;
     public static double econFactionStartingBalance = 0.0;
     public static double econDenyWithdrawWhenMinutesAgeLessThan = 2880; // 2 days
-    public static String dateFormat = "HH:mm dd/MM/yyyy";
+    public static String dateFormat = "HH:mm:ss dd/MM/yyyy";
 
 
     // -------------------------------------------- //
@@ -326,7 +326,7 @@ public class Conf {
                     + "<br>\n"
                     + "</div>";
     // Enable the %money% macro. Only do this if you know your economy manager is thread-safe.
-    public static boolean dynmapDescriptionMoney = false;
+    public static boolean dynmapDescriptionMoney = true;
     // Allow players in faction to see one another on Dynmap (only relevant if Dynmap has 'player-info-protected' enabled)
     public static boolean dynmapVisibilityByFaction = true;
     // Optional setting to limit which regions to show.
@@ -387,8 +387,8 @@ public class Conf {
     public static long logoutCooldown = 30;
 
     // Custom Ranks - Oof I forgot I was doing this _SvenjaReissaus_
-    public static boolean enableCustomRanks = false; // We will disable it by default to avoid any migration error
-    public static int maxCustomRanks = 2; // Setting this to -1 will allow unlimited custom ranks
+    public static boolean enableCustomRanks = true; // We will disable it by default to avoid any migration error
+    public static int maxCustomRanks = 3; // Setting this to -1 will allow unlimited custom ranks
     // -------------------------------------------- //
     // Persistance
     // ----------------------------------------- //
